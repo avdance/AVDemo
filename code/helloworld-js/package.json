@@ -1,0 +1,22 @@
+{
+  "name": "helloworld",
+  "version": "1.0.0",
+  "description": "The demo about about to create js project and package & release.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avdance/AVDemo.git"
+  },
+  "keywords": [
+    "package"
+  ],
+  "author": "haska1025",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avdance/AVDemo/issues"
+  },
+  "homepage": "https://github.com/avdance/AVDemo#readme"
+}
