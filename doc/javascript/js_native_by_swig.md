@@ -190,4 +190,4 @@ The square area=25
 
    笔者用的是v6.17.1 node版本。
 
-
+样例代码路径：https://github.com/avdance/AVDemo/tree/master/code/swig-js

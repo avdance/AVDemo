@@ -1,5 +1,5 @@
-### 通过nvm (node version manager)管理Node
-   
+### 通过 nvm 管理Node
+
  Node 安装可以用官网的 Installer 安装，也可以通过 Node version manager 来安装。本文重点是介绍后者，这也是官方强烈推荐的方式。因为，在项目开发的过程中，对于不同的项目需求，往往需要不同的 Node 版本。而 Node 又是如火如荼的更新着，变化太快，我们往往希望体验新版本的特性，但又想在某些项目企图通过老版本保证稳定性，所以有一个 Node version manager 显得尤为重要。
 
    具体安装指导比较简单，可以参考官方文档：https://docs.npmjs.com/downloading-and-installing-node-js-and-npm
@@ -14,16 +14,27 @@
 
 查看nvm版本：nvm -v
 
-查看安装的node：nvm list
+查看安装的 node：nvm list
 
-安装node: nvm install <版本号>, 例如：nvm install v10.15.1
+安装某个版本 node: nvm install <版本号>, 例如：nvm install v10.15.1
 
-卸载node: nvm uninstall <版本号>
+卸载某个版本 node: nvm uninstall <版本号>
 
-应用node: nvm use <版本号>
+应用某个版本 node: nvm use <版本号>
 
-例如：
+建议设置nvm settings.txt文件，修改软件包镜像没国内源，增加如下内容：
 
+node_mirror: https://npm.taobao.org/mirrors/node/
+
+npm_mirror: https://npm.taobao.org/mirrors/npm/
+
+安装好 nvm 后，可以安装 Node 版本，
+
+```javascript
+nvm install v6.17.1
+nvm use v6.17.1
+nvm list
+```
 
 ### 一个 js 前端工程需要哪些工作
 
@@ -130,7 +141,7 @@ jshint 静态 JavaScript 代码检查工具，从 jslint 演化而来。
 
 一些配置使用，可以参考：https://jshint.com/docs/
 
-#### babel 
+#### babel
 
 babel 主要是将符合 ECMAScript 2015+ 标准的代码转换成兼容低版本浏览器的代码。
 
