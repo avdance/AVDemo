@@ -38,6 +38,7 @@ gulp.task('bundle', (done) =>{
     browserfiy({
         entries      : './build/lib-es5/index.js',
         extensions   : [ '.js' ],
+        standalone: 'helloworld',
         debug        : false,
 		// Required for watchify (not used here).
 		cache        : null,
@@ -49,7 +50,8 @@ gulp.task('bundle', (done) =>{
     .bundle()
     .pipe(source('helloworld-min.js'))
     .pipe(buffer())
-    .pipe(rename('helloworld-min.js'))    
+    .pipe(rename('helloworld-min.js'))
+    .pipe(uglify())
     .pipe(gulp.dest('build'));
 
     done();

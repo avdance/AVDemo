@@ -1,5 +1,5 @@
 /* jshint browser: true */
-export default function sendUrlRequest(method, url, async, body){
+export function sendUrlRequest(method, url, async, body){
 
     return new Promise((resolve, reject) => {
         let xhr;

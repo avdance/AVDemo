@@ -1,5 +1,5 @@
 /* jshint browser: true */
-export default class HelloWorld{
+export class HelloWorld{
     constructor(info){
         this.info_ = info;
     }
