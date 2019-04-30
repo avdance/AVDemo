@@ -1,0 +1,26 @@
+{
+  "name": "videojs-hls",
+  "version": "1.0.0",
+  "description": "The demo for play hls with videojs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/avdance/AVDemo.git"
+  },
+  "keywords": [
+    "videojs",
+    "hls"
+  ],
+  "author": "haska1025",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/avdance/AVDemo/issues"
+  },
+  "homepage": "https://github.com/avdance/AVDemo#readme",
+  "dependencies": {
+    "videojs-contrib-hls": "^5.15.0"
+  }
+}
