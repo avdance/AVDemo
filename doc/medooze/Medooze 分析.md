@@ -6,7 +6,7 @@ MediaServer 是一个服务器，它可以创多个 Endpoint。
 
 ## Endpoint
 
-每个 Endpoint 都代表着与一个 **conference** 或者 **Session** ？**这个还需要验证**。
+每个 Endpoint 代表服务器的一个IP/port地址。
 
 ### Endpoint的成员变量
 - ip: 提供服务的 IP 地址
@@ -22,6 +22,12 @@ MediaServer 是一个服务器，它可以创多个 Endpoint。
 每个 Transport 代表服务端的一个candidate(ip, port)与客户端一组 candidate(ip, port)的连接。这组连接使用同一个 DTLS 协议会话。
 
 每个 Tansport允许发送或接收一组输入和输出的RTP流。
+
+## incoming
+这个要仔细研究一下是干啥的
+
+## outcoming
+这个要仔细研究五是干啥的
 
 **有几点需要注意的地方：**
 
